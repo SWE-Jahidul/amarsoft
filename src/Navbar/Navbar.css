@@ -1,0 +1,12 @@
+.nav-link:hover {
+  color: #0b6cd5 !important;
+}
+
+.navbar-brand h1 {
+  color: #0b6cd5;
+}
+
+.contactme-card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}

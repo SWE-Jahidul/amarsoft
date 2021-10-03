@@ -1,0 +1,33 @@
+
+.footer{
+    background-color:#0B6CD5;
+    position: "fixed";
+    left: "0";
+    bottom: "0";
+  
+  }
+  
+
+  .social-icons-f
+  {
+    height: 45.6px;
+    width: 45.6px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+  }
+  .social-icons-f i{
+    color: white;
+  
+  }
+ 
+  
+  .fixed-bottom1 {
+    position: fixed;
+    right: 5%;
+    bottom: 7%;
+    z-index: 1030;
+  background-color: #da984d;
+  }
+  
