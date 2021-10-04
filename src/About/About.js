@@ -9,7 +9,12 @@ const About = () => {
   useEffect(() => {
     fetch("./whyjoinus.json")
       .then((res) => res.json())
-      .then((data) => setLearning(data));
+      .then((data) => {
+        setLearning(data)
+        // console.log("Fetch Data", data)
+      } );
+
+       
   }, []);
 
   return (
