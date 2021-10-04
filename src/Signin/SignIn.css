@@ -1,0 +1,49 @@
+.sign-in{
+    background-color: white;
+    height: 500px;
+    
+}
+
+.fb{
+    width: 48% ;
+    background-color: #03C0C0;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    padding: 10px;
+}
+
+
+.gmail{
+    width: 48% ;
+    background-color: #03C0C0;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    padding: 10px;
+}
+
+
+.btn{
+    width: 100% ;
+    background-color: #03C0C0;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    padding: 10px;
+}
+
+.reg
+{
+    width: 100% ;
+    font-weight: 700;
+    color: black; 
+    border: 0; 
+    padding: 10px;
+
+}
+.reg:hover{
+    background-color: #03C0C0;
+    color: white; 
+
+}

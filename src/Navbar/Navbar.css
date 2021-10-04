@@ -11,7 +11,7 @@
 
 }
 
-.nav-link:hover {
+.menu-link:hover {
   color: #03C0C0 !important;
 } 
 
@@ -22,4 +22,13 @@
 .fa-navicon{
  
   color: white !important;
+}
+
+.signin:hover{
+  background-color: #03C0C0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
 }

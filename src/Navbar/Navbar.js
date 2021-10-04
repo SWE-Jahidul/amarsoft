@@ -39,29 +39,33 @@ const Navbar = () => {
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <Link to="/" className="nav-link menu-link">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link">
+              <Link to="/about" className="nav-link menu-link">
                 About
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/services" className="nav-link">
+              <Link to="/services" className="nav-link menu-link">
                 Services
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link to="/contactus" className="nav-link">
+              <Link to="/contactus" className="nav-link menu-link">
                 Contact Us
               </Link>
             </li>
           </ul>
-          <span className='text-white '>HotLine : +088 0154752241</span>
+          <span>
+            <Link to="/singin" className="nav-link signin ">
+              Sign In
+            </Link>
+          </span>
         </div>
       </div>
     </nav>

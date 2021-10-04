@@ -18,6 +18,7 @@ const Contactus = () => {
       <div className="container overflow-hidden">
         <div className="row mt-2 pt-3 gy-3">
             {
+              
             contacts.map((contact) => (
             <Contact key={contact.id} contact={contact}></Contact>
           

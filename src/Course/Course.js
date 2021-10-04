@@ -6,7 +6,7 @@ const Course = (props) => {
   const { image, subject, title, details } = props.course;
   return (
     <div className="col-lg-3 col-md-3 col-12 g-3">
-      <div class="card course-card shadow-lg rounded-2">
+      <div class="card course-card shadow-lg rounded-3">
         <img
           class="card-img-top"
           src={image}

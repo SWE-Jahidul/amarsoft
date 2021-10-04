@@ -17,6 +17,8 @@ import Navbar from "./Navbar/Navbar";
 import Contactus from "./Contactus/Contactus";
 import NotFound from "./NotFound/NotFound";
 import Home from "./Home/Home";
+import Signin from "./Signin/Signin";
+import Register from "./Register/Register";
 
 function App() {
   return (
@@ -26,7 +28,7 @@ function App() {
         <Route exact path="/">
           <Home></Home>
         </Route>
-        <Route  path="/home">
+        <Route path="/home">
           <Home></Home>
         </Route>
         <Route path="/about">
@@ -38,6 +40,14 @@ function App() {
 
         <Route path="/contactus">
           <Contactus></Contactus>
+        </Route>
+
+        <Route path="/singin">
+          <Signin></Signin>
+        </Route>
+
+        <Route path="/register">
+          <Register></Register>
         </Route>
 
         <Route path="*">
