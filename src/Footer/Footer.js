@@ -41,7 +41,7 @@ const Footer = () => {
                     <p className="text-center text-white ">Copyright © 2020  AmarSoft All
                         Rights
                         Reserved by
-                        Jahidul Islam .
+                        j Islam .
                     </p>
 
                 </div>
