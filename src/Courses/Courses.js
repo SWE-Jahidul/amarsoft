@@ -12,7 +12,7 @@ const Courses = () => {
   return (
     <div className='container'>
       <div className="row mt-3 mb-3">
-        {courses.map((course) => (
+        {courses.slice(0, 4).map((course) => (
           <Course key={course.id} course={course}></Course>
         ))}
       </div>

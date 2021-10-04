@@ -19,11 +19,12 @@ const About = () => {
 
   return (
     <div>
-      <h1 className="text-center about-us py-3"> WHY JOIN LEARN</h1>
-      <hr className="w-25 m-auto text-color " />
+  
       <div className="aboutus">
-        <div className="container pt-1  ">
-          <div className="row   py-5">
+      <h1 className="text-center about-us pt-5"> WHY JOIN LEARN</h1>
+      <hr className="w-25 m-auto text-color " />
+        <div className="container">
+          <div className="row pb-5">
             {whylearings.map((whylearing) => (
               <WhyJoinUs
                 key={whylearing.id}

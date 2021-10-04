@@ -1,10 +1,12 @@
 import React from "react";
 
+
+import './Course.css'
 const Course = (props) => {
   const { image, subject, title, details } = props.course;
   return (
     <div className="col-lg-4 col-md-4 col-12 g-3">
-      <div class="card">
+      <div class="card course-card">
         <img
           class="card-img-top"
           src={image}
