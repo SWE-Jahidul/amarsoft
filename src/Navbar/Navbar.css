@@ -1,10 +1,19 @@
-.nav-link:hover {
-  color: #0b6cd5 !important;
+.navbar
+{
+  background-color: #1C1C1C;
+}
+.navbar-brand  {
+  color: white ;
 }
 
-.navbar-brand h1 {
-  color: #0b6cd5;
+.nav-link{
+  color: white ;
+
 }
+
+.nav-link:hover {
+  color: #03C0C0 !important;
+} 
 
 .contactme-card {
   background-color: whitesmoke;

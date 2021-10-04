@@ -1,19 +1,17 @@
 import React from "react";
 import About from "../About/About";
 import Contactus from "../Contactus/Contactus";
+import Services from "../Services/Services";
 
 const Home = () => {
   return (
-  
-  <div>
-     
-<About>
+    <div>
+      <About></About>
 
-</About>
-<Contactus>
-    
-</Contactus>
-  </div>
+ 
+      <Services> </Services>
+      <Contactus></Contactus>
+    </div>
   );
 };
 

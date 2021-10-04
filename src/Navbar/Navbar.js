@@ -2,15 +2,24 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { Container, Nav, NavDropdown } from "react-bootstrap";
+import logo from  '../images/logo.png'
 
-import  './Navbar.css';
+import "./Navbar.css";
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg ">
       <div className="container">
-        <a className="navbar-brand fw-bold" href="#">
-        <h1> AmarSoft </h1>
+        <a class="navbar-brand fw-bold" href="#">
+          <img
+            src={logo}
+            width="40"
+            height="40"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          LEARN
         </a>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -22,7 +31,10 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse fw-bold" id="navbarSupportedContent">
+        <div
+          className="collapse navbar-collapse fw-bold"
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
             <li className="nav-item">
               <Link to="/" className="nav-link">
