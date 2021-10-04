@@ -4,7 +4,7 @@ import './Contact.css'
 const Contactus = () => {
   return (
     <div className="container pb-5">
-    <h1 className="fw-bold fs-1 text-center icon-color py-3">Contact Me
+    <h1 className="fw-bold fs-1 text-center icon-color py-3">CONTACT US
     </h1>
 
     <hr className="w-25 m-auto text-color " />
