@@ -1,3 +1,11 @@
 .about-us {
   color: #03C0C0 !important;
 }
+
+.aboutus {
+  background: url(../images/5cba2aba229c4_thumb900.jpg)  no-repeat center center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

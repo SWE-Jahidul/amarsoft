@@ -13,14 +13,21 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container mt-5 ">
-      <h1 className="text-center about-us "> WHY JOIN LEARN</h1>
+    <div>
+      <h1 className="text-center about-us py-3"> WHY JOIN LEARN</h1>
       <hr className="w-25 m-auto text-color " />
-      <div className="row  mt-5 mb-5">
-          {whylearings.map((whylearing) => (
-            <WhyJoinUs key={whylearing.id} whylearing={whylearing}></WhyJoinUs>
-          ))}
+      <div className="aboutus">
+        <div className="container pt-1  ">
+          <div className="row   py-5">
+            {whylearings.map((whylearing) => (
+              <WhyJoinUs
+                key={whylearing.id}
+                whylearing={whylearing}
+              ></WhyJoinUs>
+            ))}
+          </div>
         </div>
+      </div>
     </div>
   );
 };
