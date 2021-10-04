@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { Container, Nav, NavDropdown } from "react-bootstrap";
-import logo from  '../images/logo.png'
+import logo from "../images/logo.png";
 
 import "./Navbar.css";
 const Navbar = () => {
@@ -30,8 +30,7 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon ">
-
-          <i class="fa fa-navicon"  aria-hidden="true"></i>
+            <i class="fa fa-navicon" aria-hidden="true"></i>
           </span>
         </button>
         <div
@@ -62,6 +61,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          <span className='text-white '>HotLine : +088 0154752241</span>
         </div>
       </div>
     </nav>

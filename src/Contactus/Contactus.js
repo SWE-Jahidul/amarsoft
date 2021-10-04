@@ -16,9 +16,7 @@ const Contactus = () => {
 
       <hr className="w-25 m-auto text-color " />
       <div className="container overflow-hidden">
-        <div className="row mt-2 pt-3">
-        
-         
+        <div className="row mt-2 pt-3 gy-3">
             {
             contacts.map((contact) => (
             <Contact key={contact.id} contact={contact}></Contact>

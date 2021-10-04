@@ -17,10 +17,17 @@
     justify-content: center;
      align-items: center;
   }
+
   .social-icons-f i{
     color: white;
-  
+
   }
+
+  .social-icons-f i:hover{
+    color: #03C0C0 !important;
+
+  }
+ 
  
   
   .fixed-bottom1 {

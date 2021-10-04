@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "images": "fas fa-chalkboard-teacher fa-3x",
+      "Title": "Expert teachers",
+      "Details": "Expert teachers are aware of what they are doing; they monitor and adjust their teaching behaviours to bring out the best in their students."
+    },
+    {
+      "id": 2,
+      "images": "fas fa-certificate fa-3x",
+      "Title": "Trusted certifications",
+      "Details": "Expert teachers are aware of what they are doing; they monitor and adjust their teaching behaviours to bring out the best in their students."
+    },
+    {
+      "id": 3,
+      "images": "fas fa-file-audio fa-3x",
+      "Title": "+500 Audio lessons",
+      "Details": "Expert teachers are aware of what they are doing; they monitor and adjust their teaching behaviours to bring out the best in their students."
+    },
+    {
+      "id": 4,
+      "images": "fas fa-video fa-3x",
+      "Title": "+1.200 Video lessons",
+      "Details": "+1.200 Video lessons. Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset,"
+    }
+  ]

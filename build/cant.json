@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "images": "fas fa-location-arrow fa-2x",
+      "Title": "Dhaka-1229,Bangladesh"
+    },
+    {
+      "id": 2,
+      "images": "fas fa-phone-alt fa-2x",
+      "Title": "+88 01789642364"
+    },
+    {
+      "id": 3,
+      "images": "fas fa-envelope fa-2x",
+      "Title": "learn@gmail.com"
+    }
+]
