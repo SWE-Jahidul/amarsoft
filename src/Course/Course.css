@@ -1,4 +1,28 @@
 .course-card{
-    min-height: 350px;
-    max-height: 350px;
+    min-height: 400px;
+    max-height: 400px;
 }
+
+.course-price
+{
+    color: #03C0C0;
+}
+.fb{
+    width: 48% ;
+    background-color: #03C0C0;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    padding: 7px;
+}
+
+
+.gmail{
+    width: 48% ;
+    background-color: #03C0C0;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    padding: 7px;
+}
+

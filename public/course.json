@@ -4,41 +4,52 @@
       "image": "https://i.morioh.com/2020/03/25/4abaa0c99507.jpg",
       "subject": "JS",
       "title": "Defenciation",
-      "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae ei."
+      "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae ei.",
+      "price":"$20"    
     },
     {
       "id": 2,
       "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--54ca_F2q--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/1wwdyw5de8avrdkgtz5n.png",
       "subject": "React",
       "title": "Defenciation",
-      "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae e"
+      "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae e",
+      "price":"$20"
+
     },
     {
       "id": 3,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiYZ29XArbWDkJiSenWYPrRZ30zdsUE1o7qg&usqp=CAU",
       "subject": "Java ",
       "title": "Build a Business Plan",
-      "details": "Traditional business plan format · Executive summary · Company description · Market analysis · Organization and management · Service or product line "
+      "details": "Traditional business plan format · Executive summary · Company description · Market analysis · Organization and management · Service or product line ",
+      "price":"$20"    
+
     },
     {
       "id": 4,
       "image": "https://pbs.twimg.com/profile_images/1273081551354396672/-Tzadxix_400x400.jpg",
       "subject": "Bootstrap",
       "title": "Impressionist",
-      "details": "Impressionism is a 19th-century art movement thin, yet visible brush strokes, open composition, emphasis on accurate depiction of light in its"
+      "details": "Impressionism is a 19th-century art movement thin, yet visible brush strokes, open composition, emphasis on accurate depiction of light in its",
+      "price":"$20"    
+
     },
     {
       "id": 5,
       "image": "https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg",
       "subject": "html",
       "title": "Defenciation",
-      "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae e"
+      "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae e",
+      "price":"$20"    
+
     },
     {
       "id": 6,
       "image": "https://sololearnuploads.azureedge.net/uploads/courses/1073.png",
       "subject": "Python",
       "title": "Defenciation",
-      "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae e"
+      "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae e",
+      "price":"$20"    
+
     }
   ]
