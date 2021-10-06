@@ -20,6 +20,7 @@ import Home from "./Home/Home";
 import Signin from "./Signin/Signin";
 import Register from "./Register/Register";
 import Blogs from "./Blog/Blogs/Blogs";
+import OurExpertices from "./OurExpertises/OurExpertices";
 
 function App() {
   return (
@@ -32,6 +33,13 @@ function App() {
         <Route path="/home">
           <Home></Home>
         </Route>
+        <Route path="/ourexprtice">
+          <OurExpertices>
+
+          </OurExpertices>
+        </Route>
+
+
         <Route path="/about">
           <About></About>
         </Route>
