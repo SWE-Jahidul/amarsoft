@@ -17,7 +17,7 @@ const Navbar = () => {
             class="d-inline-block align-top"
             alt=""
           />
-          LEARN
+          AMARSCHOOL
         </a>
 
         <button
@@ -60,6 +60,12 @@ const Navbar = () => {
                 Contact Us
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/blogs" className="nav-link menu-link">
+                Blogs
+              </Link>
+            </li>
+
           </ul>
           <span>
             <Link to="/singin" className="nav-link signin ">

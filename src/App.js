@@ -19,6 +19,7 @@ import NotFound from "./NotFound/NotFound";
 import Home from "./Home/Home";
 import Signin from "./Signin/Signin";
 import Register from "./Register/Register";
+import Blogs from "./Blog/Blogs/Blogs";
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
 
         <Route path="/contactus">
           <Contactus></Contactus>
+        </Route>
+
+        <Route path='/blogs'>
+          <Blogs></Blogs>
         </Route>
 
         <Route path="/singin">
