@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./StudentPerception.css";
-import img3 from "../images/29f6bb1811414e1fbfa654e5e188812c.jfif";
+import img3 from "../images/francis_angelyn_logo2020.jpg";
 
 const StuedentPerception = () => {
   return (
@@ -14,7 +14,7 @@ const StuedentPerception = () => {
       <div className="container ">
         <div className="d-flex justify-content-center py-4">
           <img
-            className="card-img-top"
+            className="card-img-top rounded-circle"
             src={img3}
             style={{
             height:60,

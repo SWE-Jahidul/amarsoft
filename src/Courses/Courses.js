@@ -8,7 +8,7 @@ const Courses = () => {
       .then((res) => res.json())
       .then((data) => setCources(data));
   }, []);
-
+ 
   return (
     <div className='container'>
       <div className="row mt-3 mb-3">

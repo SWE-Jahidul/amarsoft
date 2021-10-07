@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "icon": "fas fa-align-justify fa-2x",
+        "Title": "Learn Courses Online ",
+        "discripton": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": 2,
+        "icon": "fas fa-heart fa-2x",
+        "Title": "Best Industry Experts ",
+        "discripton": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": 3,
+        "icon": "fas fa-cog fa-2x",
+        "Title": "See Our Best skills ",
+        "discripton": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+]
