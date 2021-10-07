@@ -1,0 +1,15 @@
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
+
+
+.student-perception-header{
+    color: rgb(0, 171, 21);;
+}
+
+.fa-user{
+    color: rgb(0, 171, 21);;
+}
+

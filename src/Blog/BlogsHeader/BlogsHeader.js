@@ -1,7 +1,7 @@
 import React from 'react';
 
 import "./BlogsHeader.css"
-import img from '../../images/Digital-Marketing-Company-India2.gif'
+import img from '../../images/9f41e2d14093da80356873e2b8745950.jpg'
 const BlogsHeader = () => {
     return (
         <div>
@@ -16,7 +16,7 @@ const BlogsHeader = () => {
             />
 
 
-            <div class="centered text-center text-dark">
+            <div class="centered text-center text-white">
 
                 <h1 className="fw-bold display-4">AMARSCHOOL BLOG </h1>
                 <h5>

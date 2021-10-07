@@ -10,7 +10,6 @@ import './Header.css'
 const Header = () => {
   return (
     <div>
-      <h1>
         <div
           id="carouselExampleCaptions"
           className="carousel slide"
@@ -121,7 +120,6 @@ const Header = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-      </h1>
     </div>
   );
 };

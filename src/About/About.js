@@ -21,7 +21,7 @@ const About = () => {
     <div>
   
       <div className="aboutus">
-      <h1 className="text-center about-us pt-5"> WHY JOIN LEARN</h1>
+      <h1 className="text-center about-us pt-5"> WHY JOIN AMARSCHOOL</h1>
       <hr className="w-25 m-auto text-color " />
         <div className="container">
           <div className="row pb-5">

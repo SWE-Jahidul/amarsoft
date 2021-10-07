@@ -1,9 +1,9 @@
 import React from "react";
 import About from "../About/About";
-import Contactus from "../Contactus/Contactus";
 import Services from "../Services/Services";
 import Header from "../Header/Header";
 import OurExpertices from "../OurExpertises/OurExpertices";
+import StuedentPerception from "../StudentPerception/StuedentPerception";
 
 const Home = () => {
   return (
@@ -12,7 +12,8 @@ const Home = () => {
       <OurExpertices></OurExpertices>
       <About></About>
       <Services> </Services>
-      <Contactus></Contactus>
+      <StuedentPerception></StuedentPerception>
+
     </div>
   );
 };

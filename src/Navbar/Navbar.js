@@ -17,7 +17,7 @@ const Navbar = () => {
             class="d-inline-block align-top"
             alt=""
           />
-          AMARSCHOOL
+          AMAR <span className="schol-name-color"> SCHOOL </span>
         </a>
 
         <button
