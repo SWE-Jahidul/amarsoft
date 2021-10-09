@@ -15,6 +15,7 @@ import Signin from "./Signin/Signin";
 import Register from "./Register/Register";
 import Blogs from "./Blog/Blogs/Blogs";
 import OurExpertices from "./OurExpertises/OurExpertices";
+import Aboutus from "./AboutUs/Aboutus";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
 
 
         <Route path="/about">
-          <About></About>
+        <Aboutus></Aboutus>
         </Route>
         <Route path="/services">
           <Services></Services>

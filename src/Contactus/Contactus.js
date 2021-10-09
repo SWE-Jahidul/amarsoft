@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Contact from "../Contact/Contact";
+import ReadtoStaerted from "../ReadytoStarted/ReadtoStaerted";
 
 import "./Contact.css";
 const Contactus = () => {
@@ -11,7 +12,8 @@ const Contactus = () => {
   }, []);
 
   return (
-    <div className="container pb-5">
+    <div>
+<div className="container pb-5">
       <h1 className="fw-bold fs-1 text-center icon-color py-3">Contact Me</h1>
 
       <hr className="w-25 m-auto text-color " />
@@ -26,7 +28,13 @@ const Contactus = () => {
            
             </div>
           </div>
+
         </div>
+    
+        <ReadtoStaerted></ReadtoStaerted>
+
+    </div>
+    
 
 
   );
