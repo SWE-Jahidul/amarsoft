@@ -1,17 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
-  Redirect,
-  useHistory,
-  useLocation,
+  Route
 } from "react-router-dom";
 import About from "./About/About";
 import Services from "./Services/Services";
-import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Navbar from "./Navbar/Navbar";
 import Contactus from "./Contactus/Contactus";

@@ -1,8 +1,10 @@
 .footer {
-  background-color: #1c1c1c;
+  background-color: #F0F5FB;
   position: "fixed";
   left: "0";
   bottom: "0";
+  color: #000;
+
 }
 
 .social-icons-f {
@@ -15,7 +17,7 @@
 }
 
 .social-icons-f i {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .social-icons-f i:hover {
@@ -28,4 +30,9 @@
   bottom: 7%;
   z-index: 1030;
   background-color: #da984d;
+}
+
+h5{
+  color:rgb(3, 56, 46);
+  font-weight: bolder !important;
 }

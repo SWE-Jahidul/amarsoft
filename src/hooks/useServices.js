@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Course from "../Course/Course";
+import  { useEffect, useState } from "react";
 
 const useServices = () => {
   const [courses, setCources] = useState([]);

@@ -1,11 +1,10 @@
 import React from "react";
-
 import "./RecentBlog.css"
 const RecentBlog = (props) => {
   const { images, title, discripton, date, authorname } = props.recentblog;
   return (
 
-    <div className="col-lg-3 col-md-3 col-12 g-3">
+    <div className="col-lg-3 col-md-3 col-12 g-3 ">
       <div class="card course-card shadow-lg rounded-3 hovereffect">
         <img
           className="card-img-top"

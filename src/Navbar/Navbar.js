@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import { Container, Nav, NavDropdown } from "react-bootstrap";
 import logo from "../images/logo.png";
 
 import "./Navbar.css";
@@ -9,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container">
-        <a class="navbar-brand fw-bold" href="#">
+        <a className="navbar-brand fw-bold" href="#">
           <img
             src={logo}
             width="40"

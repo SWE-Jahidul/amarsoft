@@ -9,9 +9,9 @@ const RecentBlogs = () => {
       .then((data) => setRecentblogs(data));
   }, []);
   return (
-    <div>
-      <div className="container">
-        <h2 className=" mt-3 recent-blogs-header"> Our Recent Blogs</h2>
+    <div className="mb-5">
+      <div className="container mt-3">
+        <h2 className=" mt-3 recent-blogs-header"> Recent Posts </h2>
         <div className="row mt-1 mb-3">
           {recentblogs.map((recentblog) => (
             <RecentBlog

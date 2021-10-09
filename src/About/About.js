@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import "./About.css";
-import img from "../images/about-img.svg";
 import WhyJoinUs from "../WhyJoinUs/WhyJoinUs";
 const About = () => {
   const [whylearings, setLearning] = useState([]);

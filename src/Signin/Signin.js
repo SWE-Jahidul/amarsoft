@@ -7,19 +7,22 @@ import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
-  GithubAuthProvider,
+  FacebookAuthProvider,
 } from "firebase/auth";
 
 const Signin = () => {
   initilizeauthentication();
 
+  const facebookAuthProvider = new FacebookAuthProvider();
   const googleProvider = new GoogleAuthProvider();
   const [user, setUser] = useState({});
+  const auth = getAuth();
+
   const hanldleGoogleSignIn = () => {
-    const auth = getAuth();
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const { displayName, email, photoURL } = result.user;
+        console.log(result.user);
         const logedInuser = {
           name: displayName,
           email: email,
@@ -30,13 +33,32 @@ const Signin = () => {
 
       .catch((error) => {});
   };
+
+  const handleFacebookSignin = () => {
+    signInWithPopup(auth, facebookAuthProvider)
+      .then((result) => {
+        const { displayName, email, photoURL } = result.user;
+        console.log(result.user);
+
+        const logeduser = {
+          name: displayName,
+          email: email,
+          photo: photoURL,
+        };
+
+        setUser(logeduser);
+      })
+
+      .catch((error) => {});
+  };
+
   return (
     <div className="d-flex justify-content-center ">
       <div className="sign-in shadow-lg my-5  px-5">
         <h3 className="text-center pt-5"> LOGIN TO AMARSCHOOL</h3>
         <hr className="w-75 ms-auto me-auto" />
         <div className="d-flex justify-content-around">
-          <button type="button" class="fb my-2 ">
+          <button type="button" class="fb my-2 " onClick={handleFacebookSignin}>
             Facebook
           </button>
           <button
