@@ -11,8 +11,10 @@ const HomeCourse = () => {
   }
   return (
     <div>
+      <h1 className="text-center service pt-4"> LATEST COURSES </h1>
+
       <div className="container">
-        <div className="row mt-3 mb-3">
+        <div className="row mb-3">
           {courses.slice(0, 4).map((course) => (
             <Course key={course.id} course={course}></Course>
           ))}

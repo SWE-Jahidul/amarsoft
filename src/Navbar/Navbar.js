@@ -43,7 +43,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            
+
             <li className="nav-item">
               <Link to="/about" className="nav-link menu-link">
                 About
@@ -66,14 +66,15 @@ const Navbar = () => {
                 Blogs
               </Link>
             </li>
-
           </ul>
-          <span>
-            <Link to="/singin" className="nav-link signin ">
+        </div>
+
+        <div className="d-flex flex-row-reverse">
+            <Link to="/singin" className=" signin ">
               Sign In
             </Link>
-          </span>
         </div>
+
       </div>
     </nav>
   );

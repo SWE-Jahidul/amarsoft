@@ -1,7 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import initilizeauthentication from "../Firebase/firebase.initialize";
 import "./SignIn.css";
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  GithubAuthProvider,
+} from "firebase/auth";
+
 const Signin = () => {
+  initilizeauthentication();
+
+  const googleProvider = new GoogleAuthProvider();
+  const [user, setUser] = useState({});
+  const hanldleGoogleSignIn = () => {
+    const auth = getAuth();
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        const { displayName, email, photoURL } = result.user;
+        const logedInuser = {
+          name: displayName,
+          email: email,
+          photo: photoURL,
+        };
+        setUser(logedInuser);
+      })
+
+      .catch((error) => {});
+  };
   return (
     <div className="d-flex justify-content-center ">
       <div className="sign-in shadow-lg my-5  px-5">
@@ -11,7 +39,11 @@ const Signin = () => {
           <button type="button" class="fb my-2 ">
             Facebook
           </button>
-          <button type="button" class="gmail  my-2">
+          <button
+            type="button"
+            class="gmail  my-2 "
+            onClick={hanldleGoogleSignIn}
+          >
             Gmail
           </button>
         </div>

@@ -7,7 +7,7 @@
 .fb{
     width: 48% ;
     background-color: rgb(0, 171, 21);;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     border: 0;
     padding: 10px;
@@ -19,7 +19,7 @@
 .gmail{
     width: 48% ;
     background-color: rgb(0, 171, 21);;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     border: 0;
     padding: 10px;
@@ -31,7 +31,7 @@
 .btn{
     width: 100% ;
     background-color: rgb(0, 171, 21);;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     border: 0;
     padding: 10px;
@@ -42,7 +42,7 @@
 .reg
 {
     width: 100% ;
-    font-weight: 700;
+    font-weight: 500;
     color: black; 
     border: 0; 
     padding: 10px;
@@ -50,8 +50,9 @@
 
 
 }
-.reg:hover{
-    background-color: rgb(0, 171, 21);;
+.reg
+.gmail:hover{
+    background-color:  rgb(3, 56, 46);
     color: white; 
 
 }
