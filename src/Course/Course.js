@@ -19,7 +19,6 @@ const Course = (props) => {
           <div className="d-flex justify-content-between">
             <div>
               <h5 className="card-title">{subject}</h5>
-              <p className="card-text">{title}</p>
             </div>
 
             <div>

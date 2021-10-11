@@ -1,0 +1,19 @@
+li{
+    margin-top: 10px;
+}
+
+.readmore{
+    width: 30% ;
+    background-color: rgb(0, 171, 21);;
+    font-weight: 500;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 50px 50px;
+
+}
+
+
+.readmore:hover{
+    background-color: #08608B;
+}

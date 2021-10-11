@@ -101,9 +101,9 @@
     }
     
     .hovereffect:hover img {
-    -ms-transform:scale(1.2);
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
+    -ms-transform:scale(1.01);
+    -webkit-transform:scale(1.01);
+    transform:scale(1.01);
     }
     
     .hovereffect:hover .overlay {
