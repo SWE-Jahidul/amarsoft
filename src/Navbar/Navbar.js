@@ -5,6 +5,9 @@ import logo from "../images/logo.png";
 
 import "./Navbar.css";
 import useAuth from "../hooks/useAuth";
+
+import { HashLink } from 'react-router-hash-link';
+
 const Navbar = () => {
   const { users, logOut } = useAuth();
   return (
@@ -40,32 +43,32 @@ const Navbar = () => {
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link menu-link">
+              <HashLink to="/" className="nav-link menu-link">
                 Home
-              </Link>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/about" className="nav-link menu-link">
+              <HashLink to="/about" className="nav-link menu-link">
                 About
-              </Link>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/services" className="nav-link menu-link">
+              <HashLink to="/services" className="nav-link menu-link">
                 Services
-              </Link>
+              </HashLink>
             </li>
 
             <li className="nav-item">
-              <Link to="/contactus" className="nav-link menu-link">
+              <HashLink to="/contactus" className="nav-link menu-link">
                 Contact Us
-              </Link>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <Link to="/blogs" className="nav-link menu-link">
+              <HashLink to="/blogs" className="nav-link menu-link">
                 Blogs
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </div>
@@ -84,20 +87,20 @@ const Navbar = () => {
                 }}
               />
             ) : (
-              <div></div>
+              <div></div>    
             )}
 
           </div>
 
           <div>
             {users.uid || users.email ? (
-              <Link to="" className="signin" onClick={logOut}>
+              <HashLink to="" className="signin" onClick={logOut}>
                 Log Out
-              </Link>
+              </HashLink>
             ) : (
-              <Link to="/singin" className=" signin ">
+              <HashLink to="/singin" className=" signin ">
                 Sign In
-              </Link>
+              </HashLink>
             )}
           </div>
         </div>

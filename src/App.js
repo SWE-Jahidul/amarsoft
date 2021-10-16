@@ -13,6 +13,7 @@ import Blogs from "./Blog/Blogs/Blogs";
 import OurExpertices from "./OurExpertises/OurExpertices";
 import Aboutus from "./AboutUs/Aboutus";
 import AuthProvider from "./context/AuthProvider";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -42,9 +43,9 @@ function App() {
               <Contactus></Contactus>
             </Route>
 
-            <Route path="/blogs">
+            <PrivateRoute path="/blogs">
               <Blogs></Blogs>
-            </Route>
+            </PrivateRoute>
 
             <Route path="/singin">
               <Signin></Signin>

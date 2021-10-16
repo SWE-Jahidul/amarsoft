@@ -13,10 +13,11 @@ initilizeauthentication();
 const auth = getAuth();
 const useFirebase = () => {
   const [users, setUsers] = useState({});
-
+const [isloading ,setIsloading ] = useState(true);
   // Singin useing Google
 
   const signinUsingGoogle = () => {
+    setIsloading(true)
     const googleProvider = new GoogleAuthProvider();
     signInWithPopup(auth, googleProvider)
       .then((result) => {
@@ -29,7 +30,9 @@ const useFirebase = () => {
         };
         setUsers(logedInuser);
       })
-      .catch((error) => {});
+      .finally(() => setIsloading(false));
+
+      
   };
 
   // Singin useing Facebook
@@ -50,7 +53,7 @@ const useFirebase = () => {
         setUsers(logeduser);
       })
 
-      .catch((error) => {});
+      .finally(() => setIsloading(false));
   };
 
 
@@ -63,18 +66,25 @@ const useFirebase = () => {
       } else {
         setUsers({});
       }
+      setIsloading(false);
     });
     return () => unsubscribe;
   }, []);
   const logOut = () => {
-    signOut(auth).then(() => {});
+   setIsloading(true)
+    signOut(auth).then(() => {})
+
+    .finally(() => setIsloading(false));
+
   };
 
   return {
     users,
     signinUsingGoogle,
     FacebookSignin,
+    isloading,
     logOut,
+
   };
 };
 
