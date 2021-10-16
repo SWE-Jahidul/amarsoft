@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 import "./Navbar.css";
+import useAuth from "../hooks/useAuth";
 const Navbar = () => {
+  const { users, logOut } = useAuth();
   return (
     <nav className="navbar navbar-expand-lg ">
       <div className="container">
@@ -68,12 +70,37 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="d-flex flex-row-reverse">
-            <Link to="/singin" className=" signin ">
-              Sign In
-            </Link>
-        </div>
+        <div className="d-flex flex-row-reverse align-items-center">
+          <div className="ms-3">
+            {users.email || users.uid ? (
+              <img
+                src={users?.photoURL}
+                alt={users.name}
+                width="35"
+                height="35"
+                style ={{
+                  borderRadius: '50px',
 
+                }}
+              />
+            ) : (
+              <div></div>
+            )}
+
+          </div>
+
+          <div>
+            {users.uid || users.email ? (
+              <Link to="" className="signin" onClick={logOut}>
+                Log Out
+              </Link>
+            ) : (
+              <Link to="/singin" className=" signin ">
+                Sign In
+              </Link>
+            )}
+          </div>
+        </div>
       </div>
     </nav>
   );

@@ -3,54 +3,58 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import initilizeauthentication from "../Firebase/firebase.initialize";
 import "./SignIn.css";
-import {
-  getAuth,
-  signInWithPopup,
-  GoogleAuthProvider,
-  FacebookAuthProvider,
-} from "firebase/auth";
+import useAuth from "../hooks/useAuth";
+// import {
+//   getAuth,
+//   signInWithPopup,
+//   GoogleAuthProvider,
+//   FacebookAuthProvider,
+// } from "firebase/auth";
 
 const Signin = () => {
-  initilizeauthentication();
 
-  const facebookAuthProvider = new FacebookAuthProvider();
-  const googleProvider = new GoogleAuthProvider();
-  const [user, setUser] = useState({});
-  const auth = getAuth();
+const { signinUsingGoogle,FacebookSignin } = useAuth();
 
-  const hanldleGoogleSignIn = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        const { displayName, email, photoURL } = result.user;
-        console.log(result.user);
-        const logedInuser = {
-          name: displayName,
-          email: email,
-          photo: photoURL,
-        };
-        setUser(logedInuser);
-      })
+  // initilizeauthentication();
 
-      .catch((error) => {});
-  };
+  // const facebookAuthProvider = new FacebookAuthProvider();
+  // const googleProvider = new GoogleAuthProvider();
+  // const [user, setUser] = useState({});
+  // const auth = getAuth();
 
-  const handleFacebookSignin = () => {
-    signInWithPopup(auth, facebookAuthProvider)
-      .then((result) => {
-        const { displayName, email, photoURL } = result.user;
-        console.log(result.user);
+  // const hanldleGoogleSignIn = () => {
+  //   signInWithPopup(auth, googleProvider)
+  //     .then((result) => {
+  //       const { displayName, email, photoURL } = result.user;
+  //       console.log(result.user);
+  //       const logedInuser = {
+  //         name: displayName,
+  //         email: email,
+  //         photo: photoURL,
+  //       };
+  //       setUser(logedInuser);
+  //     })
 
-        const logeduser = {
-          name: displayName,
-          email: email,
-          photo: photoURL,
-        };
+  //     .catch((error) => {});
+  // };
 
-        setUser(logeduser);
-      })
+  // const handleFacebookSignin = () => {
+  //   signInWithPopup(auth, facebookAuthProvider)
+  //     .then((result) => {
+  //       const { displayName, email, photoURL } = result.user;
+  //       console.log(result.user);
 
-      .catch((error) => {});
-  };
+  //       const logeduser = {
+  //         name: displayName,
+  //         email: email,
+  //         photo: photoURL,
+  //       };
+
+  //       setUser(logeduser);
+  //     })
+
+  //     .catch((error) => {});
+  // };
 
   return (
     <div className="d-flex justify-content-center ">
@@ -58,13 +62,13 @@ const Signin = () => {
         <h3 className="text-center pt-5"> LOGIN TO AMARSCHOOL</h3>
         <hr className="w-75 ms-auto me-auto" />
         <div className="d-flex justify-content-around">
-          <button type="button" class="fb my-2 " onClick={handleFacebookSignin}>
+          <button type="button" class="fb my-2 "  onClick={FacebookSignin} >
             Facebook
           </button>
           <button
             type="button"
             class="gmail  my-2 "
-            onClick={hanldleGoogleSignIn}
+            onClick={signinUsingGoogle}
           >
             Gmail
           </button>

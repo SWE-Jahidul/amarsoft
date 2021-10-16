@@ -23,6 +23,7 @@ const Course = (props) => {
 
             <div>
               <span className="course-price"> {price}</span>
+
             </div>
           </div>
 

@@ -1,9 +1,5 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./About/About";
 import Services from "./Services/Services";
 import Footer from "./Footer/Footer";
@@ -16,54 +12,56 @@ import Register from "./Register/Register";
 import Blogs from "./Blog/Blogs/Blogs";
 import OurExpertices from "./OurExpertises/OurExpertices";
 import Aboutus from "./AboutUs/Aboutus";
+import AuthProvider from "./context/AuthProvider";
 
 function App() {
   return (
-    <Router>
-      <Navbar> </Navbar>
-      <Switch>
-        <Route exact path="/">
-          <Home></Home>
-        </Route>
-        <Route path="/home">
-          <Home></Home>
-        </Route>
-        <Route path="/ourexprtice">
-          <OurExpertices>
+    <div className="App">
+      <AuthProvider>
+        <Router>
+          <Navbar> </Navbar>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/ourexprtice">
+              <OurExpertices></OurExpertices>
+            </Route>
 
-          </OurExpertices>
-        </Route>
+            <Route path="/about">
+              <Aboutus></Aboutus>
+            </Route>
+            <Route path="/services">
+              <Services></Services>
+            </Route>
 
+            <Route path="/contactus">
+              <Contactus></Contactus>
+            </Route>
 
-        <Route path="/about">
-        <Aboutus></Aboutus>
-        </Route>
-        <Route path="/services">
-          <Services></Services>
-        </Route>
+            <Route path="/blogs">
+              <Blogs></Blogs>
+            </Route>
 
-        <Route path="/contactus">
-          <Contactus></Contactus>
-        </Route>
+            <Route path="/singin">
+              <Signin></Signin>
+            </Route>
 
-        <Route path='/blogs'>
-          <Blogs></Blogs>
-        </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
 
-        <Route path="/singin">
-          <Signin></Signin>
-        </Route>
-
-        <Route path="/register">
-          <Register></Register>
-        </Route>
-
-        <Route path="*">
-          <NotFound></NotFound>
-        </Route>
-      </Switch>
-      <Footer></Footer>
-    </Router>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
+    </div>
   );
 }
 
