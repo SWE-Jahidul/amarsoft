@@ -5,7 +5,9 @@
       "subject": "JS",
       "title": "Defenciation",
       "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae ei.",
+      "all-details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae ei.",
       "price":"$20",
+      "offer-Price" : "$15",
       "totalstudent":"145"  
     },
     {
@@ -14,7 +16,9 @@
       "subject": "React",
       "title": "Defenciation",
       "details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae e",
+      "all-details": "Lorem ipsum dolor sit amet, no sit sonet corpora indoctum, quo ad fierent insolens. Duo aeterno ancillae ei.",
       "price":"$20",
+      "offer-Price" : "$15",
       "totalstudent":"145"
 
     },

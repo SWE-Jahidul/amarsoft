@@ -17,7 +17,7 @@ if(isloading ){
           <Redirect>
             to=
             {{
-              pathname: "/singin",
+              pathname: "/signin",
               state: { from: location },
             }}
           </Redirect>

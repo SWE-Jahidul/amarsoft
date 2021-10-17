@@ -14,6 +14,7 @@ import OurExpertices from "./OurExpertises/OurExpertices";
 import Aboutus from "./AboutUs/Aboutus";
 import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import Booking from "./CourseBooking/Booking/Booking";
 
 function App() {
   return (
@@ -55,6 +56,9 @@ function App() {
               <Register></Register>
             </Route>
 
+            <Route path="/booking/:serviceId">
+              <Booking></Booking>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

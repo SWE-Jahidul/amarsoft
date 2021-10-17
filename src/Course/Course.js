@@ -1,17 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./Course.css";
 const Course = (props) => {
-  const { price, image, subject, title, details, totalstudent } = props.course;
+  var bgColors = {
+    Green: "#01AB15",
+  };
+  const { id, price, image, subject, title, details, totalstudent } =
+    props.course;
   return (
-    <div className="col-lg-3 col-md-3 col-12 g-3">
-      <div class="card course-card shadow-lg rounded-3 hovereffect">
+    <div className="col-lg-3 col-md-3 col-12 g-3 ">
+      <div class="card course-card border-0  shadoaa" 
+      style={{ 
+        borderRadius:'10px '
+
+      }}
+      >
         <img
           className="card-img-top"
           src={image}
           style={{
             minHeight: "30%",
             maxHeight: 200,
+            borderRadius:'10px 10px 0px 0px'
           }}
           alt="Card image cap"
         />
@@ -23,7 +34,6 @@ const Course = (props) => {
 
             <div>
               <span className="course-price"> {price}</span>
-
             </div>
           </div>
 
@@ -32,9 +42,23 @@ const Course = (props) => {
         <div class="card-footer">
           <div className="d-flex justify-content-around d-flex align-items-center">
             <div className="">{totalstudent} Student</div>
-            <button type="button" class="gmail  my-2">
-              Enroll Now
-            </button>
+
+            <Link to={`/booking/${id}`}>
+              <button
+                type="button"
+                class="my-2 px-3"
+                style={{
+                  backgroundColor: " rgb(0, 171, 21",
+                  fontWeight: 500,
+                  border: 0,
+                  padding: "7px",
+                  color: "white",
+                  borderRadius: "50px 50px",
+                }}
+              >
+                Enroll Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>

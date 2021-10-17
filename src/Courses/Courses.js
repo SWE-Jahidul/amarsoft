@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useServices from "../hooks/useServices";
 import Course from "../Course/Course";
+import Booking from "../CourseBooking/Booking/Booking";
 
 const Courses = () => {
   const [courses] = useServices();
