@@ -10,7 +10,9 @@ const FeturedPost = () => {
   return (
     <div > 
       <div className="container ">
-        <h2 className=" mt-5 recent-blogs-header"> Featured Posts </h2>
+        <h2 className=" mt-5 recent-blogs-header" style={{
+          textAlign:"left"
+        }}> Featured Posts </h2>
         <div className="row mt-1 mb-3">
           {recentblogs.map((recentblog) => (
             <RecentBlog

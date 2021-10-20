@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 import "./Navbar.css";
@@ -61,7 +60,7 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <HashLink to="/contactus" className="nav-link menu-link">
+              <HashLink to="/contact" className="nav-link menu-link">
                 Contact Us
               </HashLink>
             </li>

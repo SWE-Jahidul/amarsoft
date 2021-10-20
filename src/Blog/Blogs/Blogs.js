@@ -3,7 +3,6 @@ import BlogsHeader from "../BlogsHeader/BlogsHeader";
 import RecentBlogs from "../RecentBlogs/RecentBlogs";
 
 import FeturedPost from "../FeturedPost/FeturedPost"
-import ReadtoStaerted from "../../ReadytoStarted/ReadtoStaerted";
 
 const Blogs = () => {
   return (
@@ -13,7 +12,6 @@ const Blogs = () => {
       <FeturedPost></FeturedPost>
       <RecentBlogs></RecentBlogs>
      
-      <ReadtoStaerted></ReadtoStaerted>
 
     </div>
   );

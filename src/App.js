@@ -4,7 +4,6 @@ import About from "./About/About";
 import Services from "./Services/Services";
 import Footer from "./Footer/Footer";
 import Navbar from "./Navbar/Navbar";
-import Contactus from "./Contactus/Contactus";
 import NotFound from "./NotFound/NotFound";
 import Home from "./Home/Home";
 import Signin from "./Signin/Signin";
@@ -15,6 +14,7 @@ import Aboutus from "./AboutUs/Aboutus";
 import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Booking from "./CourseBooking/Booking/Booking";
+import Contact from "./Contact/Contact";
 
 function App() {
   return (
@@ -40,8 +40,8 @@ function App() {
               <Services></Services>
             </Route>
 
-            <Route path="/contactus">
-              <Contactus></Contactus>
+            <Route path="/contact">
+              <Contact></Contact>{" "}
             </Route>
 
             <PrivateRoute path="/blogs">
