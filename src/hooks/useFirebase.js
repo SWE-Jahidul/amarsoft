@@ -55,8 +55,6 @@ const [isloading ,setIsloading ] = useState(true);
 
       .finally(() => setIsloading(false));
   };
-
-
   
   // showing data all tabs
   useEffect(() => {

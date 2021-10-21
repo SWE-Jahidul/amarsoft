@@ -1,24 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import abtimage from "../images/about2-education.jpg";
 import "./AboutusHeader.css";
 const AboutusHeader = () => {
+
+  useEffect(() =>{
+    AOS.init({duration:2000});
+  
+  },[]);
+  
   return (
+    
     <div className="bg-white">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="row d-flex align-items-center">
           <div className="col-lg-6">
             <img src={abtimage} class="img-fluid p-5" alt="Responsive image" />
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-6 " >
             <div className="text-start">
               <h2>About Amrschool</h2>
               <h1 className="fw-bold my-3">
                 Welcome to Our{" "}
                 <span
                   style={{
-                    color: "#01AB15",
+                    color: "#A12C2F",
                     padding: 10,
                   }}
                 >

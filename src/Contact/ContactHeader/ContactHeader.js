@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./ContactHeader.css";
 
 import img from "../../images/9f41e2d14093da80356873e2b8745950.jpg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ContactHeader = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div>
       <img
@@ -24,7 +29,7 @@ const ContactHeader = () => {
 
       <div className="container px-4 my-5">
         <div className="row gx-5 gy-5">
-          <div className="col">
+          <div className="col" data-aos="fade-right" data-aos-delay="270">
             <div className="p-3 border-none bg-light">
               <div className="text-header bg-gray ">
                 <span
@@ -45,7 +50,7 @@ const ContactHeader = () => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col" data-aos="fade-left" data-aos-delay="270">
             <div className="p-3 border-none bg-light">
               <span
                 className="span6"
@@ -100,42 +105,10 @@ const ContactHeader = () => {
           </div>
         </div>
 
-        <div className="container mt-5">
-          {/* <div className="row gx-5">
-            <div
-              className="col-lg-4 py-5 px-2 shadow"
-              style={{
-                backgroundColor: "white",
-              }}
-            >
-                ADDRESS INFO
-
-              Dhaka-1229,Bangladesh
-            </div>
-
-            <div className="col-lg-4 py-5 px-2 shadow"
-             style={{
-                backgroundColor: "white",
-              }}>
-                  <p>
-                  EMAIL INFO
-
-                  </p>
-                  <p>
-                  educa@university.com
-
-
-                  </p>
-
-              </div>
-            <div className="col-lg-4 py-5 px-2 shadow" style={{
-                backgroundColor: "white",
-              }}>fsddddddddddg</div>
-          </div> */}
-
+        <div className="container mt-5 ">
           <div class="container px-4">
-            <div class="row gx-5">
-              <div class="col">
+            <div class="row gx-5 gy-3 ">
+              <div class="col" data-aos="fade-right" data-aos-delay="290">
                 <div
                   class="p-4 border-none bg-light address1"
                   style={{
@@ -147,7 +120,12 @@ const ContactHeader = () => {
                   <p> Dhaka-1229,Bangladesh </p>
                 </div>
               </div>
-              <div class="col">
+              <div
+                class="col"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="320"
+              >
                 <div
                   class="p-4 border-none bg-light address1"
                   style={{
@@ -159,7 +137,7 @@ const ContactHeader = () => {
                   <p> educa@university.com</p>
                 </div>{" "}
               </div>
-              <div class="col">
+              <div class="col" data-aos="fade-left" data-aos-delay="350">
                 <div
                   class="p-4 border-none bg-light address1"
                   style={{

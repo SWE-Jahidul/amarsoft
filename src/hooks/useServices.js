@@ -6,7 +6,6 @@ const useServices = () => {
     fetch("./course.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log("I have called! from userServic")
         setCources(data)
       });
   }, []);

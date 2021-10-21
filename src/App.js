@@ -15,10 +15,13 @@ import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Booking from "./CourseBooking/Booking/Booking";
 import Contact from "./Contact/Contact";
+import Teachers from "./Teachers/Teachers";
 
 function App() {
   return (
     <div className="App">
+
+      {/* <Teachers> </Teachers> */}
       <AuthProvider>
         <Router>
           <Navbar> </Navbar>

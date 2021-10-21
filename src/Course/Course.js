@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Course.css";
 const Course = (props) => {
   var bgColors = {
-    Green: "#01AB15",
+    Green: "#A12C2F;",
   };
   const { id, price, image, subject, title, details, totalstudent } =
     props.course;
@@ -48,7 +48,7 @@ const Course = (props) => {
                 type="button"
                 class="my-2 px-3"
                 style={{
-                  backgroundColor: " rgb(0, 171, 21",
+                  backgroundColor: "#A12C2F",
                   fontWeight: 500,
                   border: 0,
                   padding: "7px",
