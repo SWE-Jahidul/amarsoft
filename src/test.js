@@ -8,5 +8,5 @@ useEffect(() =>{
 },[]);
 
   
-
+// data-aos-delay="500"
   // data-aos="fade-up"

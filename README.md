@@ -10,6 +10,14 @@ Future Work :
 -- Contact Pages 
 
 
-Using Techknowledge : jsx, react , Bootstrub , css ,github, vs-code 
+Using Techknowledge : 
+=> jsx
+=> React 
+=> Bootstrub
+=> Css
+=> AOS Animation
+=> Firebse
+=> Github
+=> Vs-code 
 
 
