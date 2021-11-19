@@ -4,7 +4,6 @@ import OurExpertices from "../OurExpertises/OurExpertices";
 import StuedentPerception from "../StudentPerception/StuedentPerception";
 import HomeCourse from "../HomeCourse/HomeCourse";
 import AboutusHeader from "../AboutusHeader/AboutusHeader";
-import Teacher from "../Teacher/Teacher";
 import Teachers from "../Teachers/Teachers";
 
 import AOS from 'aos';
@@ -23,12 +22,10 @@ const Home = () => {
 
       <HomeCourse> </HomeCourse>
 
-      {/* <Teacher></Teacher> */}
 
 
       <StuedentPerception></StuedentPerception>
 
-      {/* <Teachers></Teachers> */}
       <Teachers></Teachers>
 
     </div>

@@ -161,7 +161,7 @@ const Booking = () => {
                       </div>
 
                       <div  className="col-lg-9 col-md-9 col-12">
-                        <h7> Steven Wood </h7>
+                        <h6> Steven Wood </h6>
                         <h7>Architectural Planning and Sketch </h7>
                         <p> Price : $10.00</p>
                       </div>
