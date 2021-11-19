@@ -7,6 +7,7 @@ const Courses = () => {
   const [courses] = useServices();
   return (
     <div className="container">
+      
       <div className="row mt-3 mb-3">
         {courses.map((course) => (
           <Course key={course.id} course={course}></Course>

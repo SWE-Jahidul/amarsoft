@@ -1,14 +1,24 @@
-import React, { useEffect } from "react";
+import React from 'react';
+import useTeacher from '../hooks/useTeacher';
 
+
+import TeacherCard from "../TeacherCard/TeacherCard"
 const Teachers = () => {
-  console.log("hello world !");
-  useEffect(() => {
-    fetch("../teachers.json")
-    .then(res => res.json())
-    .then(data => console.log(data))
-  });
 
-  return <div></div>;
+  const [teachers] = useTeacher([]);
+
+  return (
+  
+      <div className="container">
+        <div className="row mt-3 mb-3">
+          
+          {teachers.map((teacher) => (
+            <TeacherCard key={teacher.id} teacher={teacher}></TeacherCard>
+          ))}
+        </div>
+      </div>
+  
+  );
 };
 
 export default Teachers;

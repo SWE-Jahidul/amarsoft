@@ -17,6 +17,8 @@ import Booking from "./CourseBooking/Booking/Booking";
 import Contact from "./Contact/Contact";
 import Teachers from "./Teachers/Teachers";
 
+
+
 function App() {
   return (
     <div className="App">

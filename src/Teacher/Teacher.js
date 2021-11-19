@@ -1,23 +1,22 @@
-import React from "react";
+// import React from "react";
 
 
-import img from "../images/francis_angelyn_logo2020.jpg"
 
+// import TeacherCard from "../TeacherCard/TeacherCard"
+// import Teachers from "../Teachers/Teachers";
+// const Teacher = () => {
 
-const Teacher = () => {
-  return (
-    <div>
-      <div className="card">
-        <img className="card-img-top" src={img} alt="Card image cap" />
-        <div className="card-body">
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-};
+// const [teacher] = Teachers()
+//   return (
 
-export default Teacher;
+//       <div className="container">
+//         <div className="row mt-3 mb-3">
+//           {teacher.map((teacher) => (
+//             <TeacherCard key={teacher.id} teacher={teacher}></TeacherCard>
+//           ))}
+//         </div>
+//       </div>
+//   );
+// };
+
+// export default Teacher;

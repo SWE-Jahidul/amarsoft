@@ -21,9 +21,12 @@
 }
 
 .social-icons-f i:hover {
-  color: rgb(0, 171, 21) !important;
+  color: #A12C2F !important;
 }
 
+h5:hover{
+  color: #A12C2F;
+}
 .fixed-bottom1 {
   position: fixed;
   right: 5%;

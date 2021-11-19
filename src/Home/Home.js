@@ -28,7 +28,9 @@ const Home = () => {
 
       <StuedentPerception></StuedentPerception>
 
+      {/* <Teachers></Teachers> */}
       <Teachers></Teachers>
+
     </div>
   );
 };

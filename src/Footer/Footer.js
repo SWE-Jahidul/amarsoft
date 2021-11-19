@@ -6,28 +6,33 @@ const Footer = () => {
     <footer className="footer ">
       <section className="container ">
         <div className="row pt-5">
-          <div className="col-lg-3">
-            <h5> BROWSE </h5>
+          <div className="col-lg-3"  style={{
+               textAlign: "left",
+            }}>
+            <h5 > BROWSE </h5>
             <hr
-              className="w-25 mx-auto"
+              className="w-25 "
               style={{
                 height: 4,
-                color: "white",
+                color: "#A12C2F",
+               
               }}
             />
-
-            <p> Prices </p>
-            <p> Courses </p>
-            <p> Blog </p>
-            <p> Contact Us</p>
+            <p className="">
+              Educa is a well crafted WordPress theme suitable for educational,
+              events and courses websites. It comes packed with all the features
+              needed to present your website with style.
+            </p>
           </div>
-          <div className="col-lg-3 ">
+          <div className="col-lg-3 " style={{
+               textAlign: "left",
+            }}>
             <h5> NEXT COURSES </h5>
             <hr
-              className="w-25 mx-auto"
+              className="w-25"
               style={{
                 height: 4,
-                color: "white",
+                color: "#A12C2F",
               }}
             />
 
@@ -36,10 +41,12 @@ const Footer = () => {
             <p> SQL </p>
             <p> Oracle </p>
           </div>
-          <div className="col-lg-3 ">
-            <h5> ABPUT LEARN </h5>
+          <div className="col-lg-3 "  style={{
+               textAlign: "left",
+            }}>
+            <h5> ABPUT AMARSOFT </h5>
             <hr
-              className="w-25 mx-auto"
+              className="w-25 "
               style={{
                 height: 4,
                 color: "white",
@@ -51,10 +58,12 @@ const Footer = () => {
             <p> Tearms & Condition </p>
             <p> Register</p>
           </div>
-          <div className="col-lg-3 ">
+          <div className="col-lg-3 "  style={{
+               textAlign: "left",
+            }}>
             <h5> WORK WITH US </h5>
             <hr
-              className="w-25 mx-auto"
+              className="w-25 " 
               style={{
                 height: 4,
                 color: "white",
@@ -103,7 +112,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-center text-white ">
-              Copyright © 2020 AmarSoft All Rights Reserved by j Islam .
+              Copyright © 2020 AmarSoft All Rights Reserved by AmarSchool .
             </p>
           </div>
         </div>
