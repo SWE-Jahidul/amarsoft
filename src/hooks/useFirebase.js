@@ -12,28 +12,15 @@ initilizeauthentication();
 
 const auth = getAuth();
 const useFirebase = () => {
+  const googleProvider = new GoogleAuthProvider();
   const [users, setUsers] = useState({});
 const [isloading ,setIsloading ] = useState(true);
   // Singin useing Google
 
-  const signinUsingGoogle = () => {
-    setIsloading(true)
-    const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        const { displayName, email, photoURL } = result.user;
-        console.log(result.user);
-        const logedInuser = {
-          name: displayName,
-          email: email,
-          photo: photoURL,
-        };
-        setUsers(logedInuser);
-      })
-      .finally(() => setIsloading(false));
+  const singInWithGoogle = () => {
+    return signInWithPopup(auth, googleProvider)
 
-      
-  };
+};
 
   // Singin useing Facebook
 
@@ -78,7 +65,7 @@ const [isloading ,setIsloading ] = useState(true);
 
   return {
     users,
-    signinUsingGoogle,
+    singInWithGoogle,
     FacebookSignin,
     isloading,
     logOut,

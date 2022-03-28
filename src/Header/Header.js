@@ -54,6 +54,8 @@ const Header = () => {
               style={{
                 minHeight: "10%",
                 maxHeight: 400,
+                opacity: 0.5,
+
               }}
               alt="..."
             />
@@ -92,6 +94,8 @@ const Header = () => {
               style={{
                 minHeight: "10%",
                 maxHeight: 400,
+                opacity: 0.5,
+
               }}
               className="d-block w-100"
               alt="..."
@@ -129,6 +133,7 @@ const Header = () => {
               style={{
                 minHeight: "10%",
                 maxHeight: 400,
+                opacity: 0.5,
               }}
               className="d-block w-100"
               alt="..."

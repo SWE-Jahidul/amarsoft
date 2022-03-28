@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import { useState } from "react";
 import initilizeauthentication from "../Firebase/firebase.initialize";
 import "./SignIn.css";
@@ -13,62 +13,36 @@ import useAuth from "../hooks/useAuth";
 
 const Signin = () => {
 
-const { signinUsingGoogle,FacebookSignin } = useAuth();
+const { singInWithGoogle,isloading,users} = useAuth();
+const location = useLocation();
+  const history = useHistory();
 
-  // initilizeauthentication();
-
-  // const facebookAuthProvider = new FacebookAuthProvider();
-  // const googleProvider = new GoogleAuthProvider();
-  // const [user, setUser] = useState({});
-  // const auth = getAuth();
-
-  // const hanldleGoogleSignIn = () => {
-  //   signInWithPopup(auth, googleProvider)
-  //     .then((result) => {
-  //       const { displayName, email, photoURL } = result.user;
-  //       console.log(result.user);
-  //       const logedInuser = {
-  //         name: displayName,
-  //         email: email,
-  //         photo: photoURL,
-  //       };
-  //       setUser(logedInuser);
-  //     })
-
-  //     .catch((error) => {});
-  // };
-
-  // const handleFacebookSignin = () => {
-  //   signInWithPopup(auth, facebookAuthProvider)
-  //     .then((result) => {
-  //       const { displayName, email, photoURL } = result.user;
-  //       console.log(result.user);
-
-  //       const logeduser = {
-  //         name: displayName,
-  //         email: email,
-  //         photo: photoURL,
-  //       };
-
-  //       setUser(logeduser);
-  //     })
-
-  //     .catch((error) => {});
-  // };
-
+  const url = location.state?.from || "/home";
+  const handleGoogleLogin = () => {
+    singInWithGoogle()
+          .then(res => {
+            isloading(true)
+            users(res.user)
+              history.push(url)
+          })
+          .catch((err) => console.log(err))
+          .finally(() => {
+            // isloading(false)
+          })
+  };
   return (
     <div className="d-flex justify-content-center ">
       <div className="sign-in shadow-lg my-5  px-5">
         <h3 className="text-center pt-5"> LOGIN TO AMARSCHOOL</h3>
         <hr className="w-75 ms-auto me-auto" />
         <div className="d-flex justify-content-around">
-          <button type="button" class="fb my-2 "  onClick={FacebookSignin} >
+          {/* <button type="button" class="fb my-2 "  onClick={FacebookSignin} >
             Facebook
-          </button>
+          </button> */}
           <button
             type="button"
             class="gmail  my-2 "
-            onClick={signinUsingGoogle}
+            onClick={handleGoogleLogin}
           >
             Gmail
           </button>
